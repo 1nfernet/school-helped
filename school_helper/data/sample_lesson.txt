@@ -1,0 +1,11 @@
+Le théorème de Pythagore est un résultat fondamental en géométrie, notamment dans l'étude des triangles rectangles. Il stipule que, dans un triangle rectangle, le carré de la longueur de l'hypoténuse (le côté opposé à l'angle droit) est égal à la somme des carrés des longueurs des deux autres côtés. Ce théorème est attribué au mathématicien grec Pythagore, bien que des traces de sa connaissance existent dans d'autres civilisations bien avant lui.
+
+Formellement, si on considère un triangle rectangle ABC avec l'angle droit en A, alors on a : BC² = AB² + AC², où BC représente l'hypoténuse.
+
+Ce théorème a de nombreuses applications pratiques. Il permet de calculer des distances dans des situations où la mesure directe est impossible. Par exemple, en architecture, il est utilisé pour vérifier l'équerrage des angles. En navigation, il aide à déterminer les distances entre des points. En astronomie, il permet de calculer les distances entre les étoiles et les planètes.
+
+La démonstration la plus courante de ce théorème utilise des aires. On construit un carré dont chaque côté a pour longueur la somme des deux côtés de l'angle droit du triangle. Ensuite, on montre que l'aire de ce grand carré peut être calculée de deux manières différentes, ce qui conduit à l'égalité des carrés des côtés.
+
+Il existe également de nombreuses démonstrations géométriques et algébriques de ce théorème. Certaines utilisent des dissections de figures, d'autres des transformations géométriques. La diversité de ces démonstrations montre l'importance et la profondeur de ce résultat mathématique.
+
+En résumé, le théorème de Pythagore est non seulement un résultat théorique important, mais aussi un outil pratique essentiel dans de nombreux domaines des sciences et de l'ingénierie.

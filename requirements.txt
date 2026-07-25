@@ -1,0 +1,6 @@
+# School Helper - Mini IA pour les lycéens
+# Ce projet est 100% Python et n'a pas de dépendances externes
+# Il fonctionne avec Python 3.7+
+
+# Aucune dépendance externe requise !
+# Juste Python standard
