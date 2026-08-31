@@ -1,6 +1,20 @@
 # School Helper - Mini IA pour les lycéens
-# Ce projet est 100% Python et n'a pas de dépendances externes
-# Il fonctionne avec Python 3.7+
+# Dépendances externes optionnelles pour la correction avancée
 
-# Aucune dépendance externe requise !
-# Juste Python standard
+# Intégration Ollama (API HTTP)
+requests
+
+# Moteurs recommandés (optionnels)
+# Orthographe robuste (Hunspell ou cyhunspell selon plateforme)
+# hunspell
+# cyhunspell
+
+# Correction grammaticale / typographique française
+pygrammalecte==1.5.0
+language-tool-python
+
+# Suggestions rapides par distance d'édition
+symspellpy
+
+# Optionnel : uniquement pour construire un .exe Windows (voir build_exe.bat)
+# pyinstaller
