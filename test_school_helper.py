@@ -7,7 +7,7 @@ import unittest
 from school_helper.summarizer import summarize_text, summarize_lesson, extract_keywords
 from school_helper.explainer import explain_concept, explain_with_examples
 from school_helper.exercise_generator import generate_exercise, generate_quiz, generate_math_exercise
-from school_helper.rewriter import rewrite_text, simplify_text, expand_text
+from school_helper.rewriter import clean_text, rewrite_text, simplify_text, expand_text
 
 
 class TestSummarizer(unittest.TestCase):
@@ -100,6 +100,22 @@ class TestExerciseGenerator(unittest.TestCase):
 
 class TestRewriter(unittest.TestCase):
     """Tests pour le module rewriter."""
+
+    def test_clean_text_normalizes_unicode_whitespace_and_preserves_content(self):
+        """clean_text compacte les espaces Unicode sans modifier les caractères."""
+        text = "  Élève\tétudie\nle\u00a0théorème  "
+
+        self.assertEqual(clean_text(text), "Élève étudie le théorème")
+
+    def test_clean_text_returns_empty_string_for_empty_or_whitespace_input(self):
+        """clean_text produit une chaîne vide quand il n'y a aucun contenu."""
+        self.assertEqual(clean_text(""), "")
+        self.assertEqual(clean_text("\t \n\u00a0"), "")
+
+    def test_clean_text_rejects_non_string_input(self):
+        """clean_text exige une chaîne, conformément à son annotation publique."""
+        with self.assertRaises(TypeError):
+            clean_text(None)
     
     def test_rewrite_text(self):
         """Test la fonction rewrite_text."""
